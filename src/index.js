@@ -2,16 +2,20 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
-import reportWebVitals from './reportWebVitals';
+import { BrowserRouter } from "react-router-dom";
 
+
+// In order to create virtual DOM we have used 'createRoot()' element/function below
 const root = ReactDOM.createRoot(document.getElementById('root'));
+
+// 'StrictMode' basically signify that we can't use more than one component (i.e. 'App' component only) below
 root.render(
   <React.StrictMode>
-    <App />
+
+    {/* All the components child to "index.js" need to be enclosed within <BrowserRouter> container like below */}
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
   </React.StrictMode>
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();

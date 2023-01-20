@@ -68,3 +68,34 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+State - 
+- Data which is used by the components
+- kind of parameter
+- similar to const like that js
+
+
+Hooks - 
+- useState()
+- import {useState} from "react";
+- const [Count, setCount] = useState()
+
+
+Props - 
+- used to pass data from one component to another
+- data is passed from parent to chils component
+
+
+Layouts/HOC
+- Highrt Order Components
+- use to add additional feature on the existing components
+- nav<home>footer
+- nav<about>footer
+
+
+Lifecycle methods
+- Lifecycle methods are available with classComponents only
+- Mounted
+- Unmounted
+- Update
